@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondoPantalla">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro de Personas"
+            android:textColor="@color/textoPrincipal"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Ingresa nombre, edad y departamento"
+            android:textColor="@color/textoSecundario"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_card"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input"
+                android:hint="Nombre completo"
+                android:padding="14dp"
+                android:textColor="@color/textoPrincipal"
+                android:textColorHint="@color/textoHint" />
+
+            <EditText
+                android:id="@+id/etEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_input"
+                android:hint="Edad"
+                android:inputType="number"
+                android:padding="14dp"
+                android:textColor="@color/textoPrincipal"
+                android:textColorHint="@color/textoHint" />
+
+            <EditText
+                android:id="@+id/etDepartamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_input"
+                android:hint="Departamento"
+                android:padding="14dp"
+                android:textColor="@color/textoPrincipal"
+                android:textColorHint="@color/textoHint" />
+
+            <Button
+                android:id="@+id/btnAgregar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_button"
+                android:padding="14dp"
+                android:text="Agregar"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Lista de nombres"
+            android:textColor="@color/textoPrincipal"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/listViewNombres"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_card"
+            android:divider="@color/dividerColor"
+            android:dividerHeight="1dp"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Detalle seleccionado"
+            android:textColor="@color/textoPrincipal"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_card"
+            android:lineSpacingExtra="4dp"
+            android:padding="18dp"
+            android:text="Aquí aparecerán la edad y el departamento"
+            android:textColor="@color/textoSecundario"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
