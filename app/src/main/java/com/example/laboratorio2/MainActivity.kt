@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
 
         listViewNombres.setOnItemClickListener { _, _, position, _ ->
             val personaSeleccionada = listaPersonas[position]
-            tvDetalle.text = "Edad: ${personaSeleccionada.edad}\nDepartamento: ${personaSeleccionada.departamento}"
+            tvDetalle.text = "Nombre: ${personaSeleccionada.nombre}\nEdad: ${personaSeleccionada.edad}\nDepartamento: ${personaSeleccionada.departamento}"
         }
     }
 }
